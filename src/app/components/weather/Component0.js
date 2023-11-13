@@ -15,7 +15,7 @@ export default function Component0({ place, weatherType, temperature, date }) {
 	return (
 		<div className="text-white m-2 flex border-2 items-center justify-around">
 			{/*Location - Weather - Temperature */}
-			<div className="flex flex-col border-2 w-fit p-2 justify-center items-center space-y-2">
+			<div className="flex flex-col w-fit p-2 justify-center items-center space-y-2">
 				{/*Location*/}
 				<div>
 					<p className="flex items-center w-fit">
@@ -40,12 +40,12 @@ export default function Component0({ place, weatherType, temperature, date }) {
 				</p>
 			</div>
 			{/*Current Temperature Icon */}
-			<div className="relative w-[200px] h-[200px] border-2">
+			<div className="relative w-[200px] h-[200px]">
 				<WeatherIcon weatherType={weatherType} size="big" />
 			</div>
 			{/*Date*/}
 			<div>
-				<p className="text-[40px] border-2">{loading(date, formattedDate)}</p>
+				<p className="text-[40px]">{loading(date, formattedDate)}</p>
 			</div>
 		</div>
 	);
