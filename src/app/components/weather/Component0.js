@@ -52,7 +52,7 @@ export default function Component0({ place, weatherType, temperature, date }) {
 					<span className="whitespace-nowrap">
 						{loading(date, formattedDate[0])}
 					</span>
-					<span className="animate-spin"> | </span>
+					<span> | </span>
 					<span className="whitespace-nowrap">
 						{loading(date, formattedDate[1])}
 					</span>

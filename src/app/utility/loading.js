@@ -1,3 +1,5 @@
+import Spinner from "../components/Spinner";
+
 export function loading(testCase, actual) {
-	return testCase ? actual : "loading...";
+	return testCase ? actual : <Spinner />;
 }
