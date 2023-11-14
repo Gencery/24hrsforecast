@@ -14,7 +14,7 @@ export default function Home() {
 
 	return (
 		<div>
-			<div className="flex flex-col lg:flex-row m-2 border-2">
+			<div className="flex flex-col lg:flex-row m-4 border-2">
 				<Component0
 					place={data.city}
 					weatherType={data.type}
@@ -31,7 +31,7 @@ export default function Home() {
 					<Component5 />
 				</div>
 			</div>
-			<div className="border-2 flex">
+			<div className="border-2 flex flex-col sm:flex-row m-4">
 				<Component1 />
 				<div>
 					<Component2 />

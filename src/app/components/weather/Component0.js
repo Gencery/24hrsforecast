@@ -48,11 +48,11 @@ export default function Component0({ place, weatherType, temperature, date }) {
 			</div>
 			{/*Date*/}
 			<div>
-				<p className="sm:text-[40px] text-[25px]">
+				<p className="sm:text-[40px] text-[20px]">
 					<span className="whitespace-nowrap">
 						{loading(date, formattedDate[0])}
 					</span>
-					<span> | </span>
+					<span className=""> | </span>
 					<span className="whitespace-nowrap">
 						{loading(date, formattedDate[1])}
 					</span>
