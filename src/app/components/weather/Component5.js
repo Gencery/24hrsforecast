@@ -1,3 +1,3 @@
 export default function Component5() {
-	return <div>Component 5</div>;
+	return <div className="box">Component 5</div>;
 }

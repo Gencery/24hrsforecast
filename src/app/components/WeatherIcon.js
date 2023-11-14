@@ -17,7 +17,7 @@ export default function WeatherIcon({ weatherType, size }) {
 	return (
 		<Image
 			src={fileLocation + size + weatherIcon[weatherType]}
-			alt={weatherType}
+			alt={weatherType ? weatherType : "Weather type"}
 			layout="fill"
 		/>
 	);

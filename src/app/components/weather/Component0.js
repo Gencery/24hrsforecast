@@ -10,12 +10,12 @@ export default function Component0({ place, weatherType, temperature, date }) {
 		month: "long",
 		day: "numeric",
 	});
-	formattedDate = formattedDate.replace(",", " | ");
+	formattedDate = formattedDate.split(",");
 
 	return (
-		<div className="text-white m-2 flex border-2 items-center justify-around">
+		<div className="text-white flex flex-col xl:flex-row border-2 items-center justify-around space-x-2 space-y-2 p-2">
 			{/*Location - Weather - Temperature */}
-			<div className="flex flex-col w-fit p-2 justify-center items-center space-y-2">
+			<div className="flex flex-col w-fit justify-center items-center p-4">
 				{/*Location*/}
 				<div>
 					<p className="flex items-center w-fit">
@@ -25,7 +25,9 @@ export default function Component0({ place, weatherType, temperature, date }) {
 							height={40}
 							alt="location"
 						/>
-						<span className="text-2xl">{loading(place, place)}</span>
+						<span className="text-2xl whitespace-nowrap">
+							{loading(place, place)}
+						</span>
 					</p>
 				</div>
 				{/*Weather*/}
@@ -35,17 +37,26 @@ export default function Component0({ place, weatherType, temperature, date }) {
 					</p>
 				</div>
 				{/*Temperature*/}
-				<p className="text-[64px]">
-					{loading(temperature, temperature)} <span>°C</span>
+				<p className="text-[64px] whitespace-nowrap	">
+					{loading(temperature, temperature)}
+					<span>°C</span>
 				</p>
 			</div>
 			{/*Current Temperature Icon */}
-			<div className="relative w-[200px] h-[200px]">
+			<div className="relative w-[75px] h-[75px] sm:w-[125px] sm:h-[125px] md:w-[175px] md:h-[175px]">
 				<WeatherIcon weatherType={weatherType} size="big" />
 			</div>
 			{/*Date*/}
 			<div>
-				<p className="text-[40px]">{loading(date, formattedDate)}</p>
+				<p className="sm:text-[40px] text-[25px]">
+					<span className="whitespace-nowrap">
+						{loading(date, formattedDate[0])}
+					</span>
+					<span className="animate-spin"> | </span>
+					<span className="whitespace-nowrap">
+						{loading(date, formattedDate[1])}
+					</span>
+				</p>
 			</div>
 		</div>
 	);

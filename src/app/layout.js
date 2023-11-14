@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import BgVideo from "./components/BgVideo";
+import BgImage from "./components/BgImage";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,8 @@ export default function RootLayout({ children }) {
 			</head>
 			<body className={inter.className}>
 				{children}
-				<BgVideo src={"/bgVideo.mp4"} />
+				<BgImage />
+				{/* <BgVideo src={"/bgVideo.mp4"} /> */}
 			</body>
 		</html>
 	);
