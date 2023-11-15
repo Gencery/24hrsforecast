@@ -27,47 +27,47 @@ function Week({ daysOfWeek }) {
 }
 
 //Gallery kaynak kodu: `https://react.dev/learn/manipulating-the-dom-with-refs`
-function Gallery({ itemList }) {
-	const selectedRef = useRef(null);
-	const [index, setIndex] = useState(0);
+// function Gallery({ itemList }) {
+// 	const selectedRef = useRef(null);
+// 	const [index, setIndex] = useState(0);
 
-	return (
-		<>
-			<nav>
-				<button
-					onClick={() => {
-						flushSync(() => {
-							if (index < itemList.length - 1) {
-								setIndex(index + 1);
-							} else {
-								setIndex(0);
-							}
-						});
-						selectedRef.current.scrollIntoView({
-							behavior: "smooth",
-							block: "nearest",
-							inline: "center",
-						});
-					}}>
-					Next
-				</button>
-			</nav>
-			<div>
-				<ul>
-					{itemList.map((item, i) => (
-						<li key={item.id} ref={index === i ? selectedRef : null}>
-							<img
-								className={index === i ? "active" : ""}
-								src={item.imageUrl}
-								alt={"Cat #" + item.id}
-							/>
-						</li>
-					))}
-				</ul>
-			</div>
-		</>
-	);
-}
+// 	return (
+// 		<>
+// 			<nav>
+// 				<button
+// 					onClick={() => {
+// 						flushSync(() => {
+// 							if (index < itemList.length - 1) {
+// 								setIndex(index + 1);
+// 							} else {
+// 								setIndex(0);
+// 							}
+// 						});
+// 						selectedRef.current.scrollIntoView({
+// 							behavior: "smooth",
+// 							block: "nearest",
+// 							inline: "center",
+// 						});
+// 					}}>
+// 					Next
+// 				</button>
+// 			</nav>
+// 			<div>
+// 				<ul>
+// 					{itemList.map((item, i) => (
+// 						<li key={item.id} ref={index === i ? selectedRef : null}>
+// 							<img
+// 								className={index === i ? "active" : ""}
+// 								src={item.imageUrl}
+// 								alt={"Cat #" + item.id}
+// 							/>
+// 						</li>
+// 					))}
+// 				</ul>
+// 			</div>
+// 		</>
+// 	);
+// }
 
 export default function Component3({ weeklyWeather }) {
 	return;

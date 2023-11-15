@@ -39,7 +39,16 @@ export default function Home() {
 						<Component3 weeklyWeather={data.weeklyWeather} />
 					)}
 				</div>
-				<Component4 />
+
+				{data.date && data.airConditions && (
+					<Component4
+						time={data.date.split(" : ")[1]}
+						realFeel={data.airConditions.split("::")[0]}
+						wind={data.airConditions.split("::")[2]}
+						chanceOfRain={data.airConditions.split("::")[1]}
+						uvIndex={data.airConditions.split("::")[3]}
+					/>
+				)}
 			</div>
 		</div>
 	);
