@@ -13,7 +13,7 @@ export default function Component0({ place, weatherType, temperature, date }) {
 	formattedDate = formattedDate.split(",");
 
 	return (
-		<div className="text-white flex flex-col xl:flex-row border-2 items-center justify-around space-x-2 space-y-2 p-2">
+		<div className="text-white flex flex-col xl:flex-row items-center justify-around space-x-2 space-y-2 p-2">
 			{/*Location - Weather - Temperature */}
 			<div className="flex flex-col w-fit justify-center items-center p-4">
 				{/*Location*/}

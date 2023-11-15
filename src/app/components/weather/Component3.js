@@ -10,7 +10,7 @@ function Week({ daysOfWeek }) {
 				return (
 					<li
 						key={day.key}
-						className="border-2 text-white list-none flex flex-col items-center space-y-2 w-[100px]">
+						className="text-white list-none flex flex-col items-center space-y-2 w-[100px]">
 						<p className="uppercase">{day["key"]}</p>
 						<div className="w-[60px] h-[60px] relative">
 							<WeatherIcon weatherType={day.type} size={"big"} />

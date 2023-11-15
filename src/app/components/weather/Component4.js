@@ -7,8 +7,8 @@ export default function Component4({
 	uvIndex,
 }) {
 	return (
-		<div className="box sm:ml-4 my-4 sm:my-0 p-4 space-y-2 text-white h-fit">
-			<p className="flex items-center text-[32px]">
+		<div className="box ml-0 xl:ml-4 my-2 xl:my-0 p-4 space-y-2 text-white h-fit">
+			<p className="flex items-center text-[32px] space-x-4">
 				<span>
 					<Image
 						src={"/assets/img/icons/miscellaneous/Clock.png"}

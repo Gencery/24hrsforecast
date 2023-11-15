@@ -25,37 +25,37 @@ export default function Component1() {
 			</a>
 			<a
 				href="/explore"
-				className="space-y-2 flex flex-col justify-end items-center w-[125px] h-[125px]">
+				className="space-y-2 flex flex-col justify-end items-center w-[125px] h-[125px] hover:scale-125 transition hover:cursor-pointer">
 				<Image
 					src={"/assets/img/icons/miscellaneous/Explore.png"}
 					width={50}
 					height={50}
 					alt="logo"
-					className="hover:scale-150 hover:cursor-pointer"
+					className=""
 				/>
 				<p className="text-white">Explore</p>
 			</a>
 			<a
 				href="/location"
-				className="space-y-2 flex flex-col justify-end items-center w-[125px] h-[125px]">
+				className="space-y-2 flex flex-col justify-end items-center w-[125px] h-[125px] hover:scale-125 transition hover:cursor-pointer">
 				<Image
 					src={"/assets/img/icons/miscellaneous/Location.png"}
 					width={50}
 					height={50}
 					alt="logo"
-					className="hover:scale-150 hover:cursor-pointer"
+					className=""
 				/>
 				<p className="text-white">Location</p>
 			</a>
 			<a
 				href="/settings"
-				className="space-y-2 flex flex-col justify-end items-center w-[125px] h-[125px]">
+				className="space-y-2 flex flex-col justify-end items-center w-[125px] h-[125px] hover:scale-125 transition hover:cursor-pointer">
 				<Image
 					src={"/assets/img/icons/miscellaneous/Settings.png"}
 					width={50}
 					height={50}
 					alt="logo"
-					className="hover:scale-150 hover:cursor-pointer"
+					className=""
 				/>
 				<p className="text-white">Settings</p>
 			</a>

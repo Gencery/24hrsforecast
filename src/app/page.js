@@ -14,14 +14,14 @@ export default function Home() {
 
 	return (
 		<div>
-			<div className="flex flex-col lg:flex-row m-4 border-2">
+			<div className="flex flex-col lg:flex-row m-4">
 				<Component0
 					place={data.city}
 					weatherType={data.type}
 					temperature={data.degree}
 					date={data.date}
 				/>
-				<div className="flex flex-col border-2 items-center flex-grow">
+				<div className="flex flex-col items-center flex-grow">
 					<Image
 						src={"/Assets/img/logoLong.png"}
 						width={275}
@@ -31,9 +31,9 @@ export default function Home() {
 					<Component5 />
 				</div>
 			</div>
-			<div className="border-2 flex flex-col sm:flex-row m-4">
+			<div className="flex flex-col xl:flex-row m-4">
 				<Component1 />
-				<div>
+				<div className="">
 					<Component2 />
 					{data.weeklyWeather && (
 						<Component3 weeklyWeather={data.weeklyWeather} />
