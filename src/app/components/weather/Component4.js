@@ -7,8 +7,8 @@ export default function Component4({
 	uvIndex,
 }) {
 	return (
-		<div className="box sm:ml-4 my-4 sm:my-0 p-4 space-y-2 text-white">
-			<p>
+		<div className="box sm:ml-4 my-4 sm:my-0 p-4 space-y-2 text-white h-fit">
+			<p className="flex items-center text-[32px]">
 				<span>
 					<Image
 						src={"/assets/img/icons/miscellaneous/Clock.png"}
@@ -19,13 +19,13 @@ export default function Component4({
 				</span>
 				<span>{time}</span>
 			</p>
-			<p>AIR CONDITIONS</p>
-			<div className="border-2 min-w-[350px] flex flex-wrap">
+			<p className="text-[32px]">AIR CONDITIONS</p>
+			<div className="min-w-[300px] flex flex-wrap items-center justify-center space-y-6">
 				{/* Real Feel */}
-				<div className="w-[150px]">
+				<div className="w-[45%] h-[100px] flex items-center space-x-2">
 					<Image
 						src={"/assets/img/icons/miscellaneous/temp.png"}
-						width={55}
+						width={50}
 						height={65}
 						alt="real feel temperature"
 					/>
@@ -35,10 +35,10 @@ export default function Component4({
 					</p>
 				</div>
 				{/* Wind */}
-				<div>
+				<div className="w-[45%] h-[100px] flex items-center space-x-2">
 					<Image
-						src={"/assets/img/icons/miscellaneous/wind.png"}
-						width={55}
+						src={"/assets/img/icons/miscellaneous/wind2.png"}
+						width={50}
 						height={65}
 						alt="wind"
 					/>
@@ -48,10 +48,10 @@ export default function Component4({
 					</p>
 				</div>
 				{/* Chance Of Rain */}
-				<div>
+				<div className="w-[45%] h-[100px] flex items-center space-x-2">
 					<Image
 						src={"/assets/img/icons/miscellaneous/waterDrop.png"}
-						width={55}
+						width={50}
 						height={65}
 						alt="water drop"
 					/>
@@ -61,10 +61,10 @@ export default function Component4({
 					</p>
 				</div>
 				{/* UV Index */}
-				<div>
+				<div className="w-[45%] h-[100px] flex items-center space-x-2">
 					<Image
 						src={"/assets/img/icons/weather/big/sunny.png"}
-						width={55}
+						width={50}
 						height={65}
 						alt="sun"
 					/>
