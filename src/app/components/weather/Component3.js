@@ -10,12 +10,12 @@ function Week({ daysOfWeek }) {
 				return (
 					<li
 						key={day.key}
-						className="text-white list-none flex flex-col items-center space-y-2 w-[100px]">
-						<p className="uppercase">{day["key"]}</p>
-						<div className="w-[60px] h-[60px] relative">
+						className="text-white list-none flex flex-col items-center space-y-2 w-[70px] sm:w-[100px]">
+						<p className="uppercase text-[8px] md:text-[16px]">{day["key"]}</p>
+						<div className="w-[30px] h-[25px] md:w-[60px] md:h-[50px] relative">
 							<WeatherIcon weatherType={day.type} size={"big"} />
 						</div>
-						<p>
+						<p className="text-[14px] md:text-[16px]">
 							<span>{day.degree}</span>
 							<span>°C</span>
 						</p>
@@ -70,7 +70,9 @@ function Week({ daysOfWeek }) {
 // }
 
 export default function Component3({ weeklyWeather }) {
-	return;
-
-	return <Week daysOfWeek={weeklyWeather.previous} />;
+	return (
+		<div className="box ml-0 xl:ml-4 my-4 p-4 space-y-2">
+			<Week daysOfWeek={weeklyWeather.previous} />
+		</div>
+	);
 }
