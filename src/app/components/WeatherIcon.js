@@ -15,10 +15,12 @@ export default function WeatherIcon({ weatherType, size }) {
 	};
 
 	return (
-		<Image
-			src={fileLocation + size + weatherIcon[weatherType]}
-			alt={weatherType ? weatherType : "Weather type"}
-			layout="fill"
-		/>
+		weatherType && (
+			<Image
+				src={fileLocation + size + weatherIcon[weatherType]}
+				alt={weatherType ? weatherType : "Weather type"}
+				layout="fill"
+			/>
+		)
 	);
 }

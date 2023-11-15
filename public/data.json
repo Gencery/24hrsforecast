@@ -1,7 +1,7 @@
 {
   "date": "Tue Nov 07 2023 : 8:00 GMT",
   "city": "New York",
-  "type": "Thunder",
+  "type": "thunder",
   "degree": 18,
   "airConditions": "16::2::0.8::4",
   "forecast":{

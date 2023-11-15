@@ -35,7 +35,9 @@ export default function Home() {
 				<Component1 />
 				<div>
 					<Component2 />
-					<Component3 />
+					{data.weeklyWeather && (
+						<Component3 weeklyWeather={data.weeklyWeather} />
+					)}
 				</div>
 				<Component4 />
 			</div>

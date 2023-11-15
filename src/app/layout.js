@@ -18,8 +18,8 @@ export default function RootLayout({ children }) {
 			</head>
 			<body className={inter.className}>
 				{children}
-				<BgImage />
-				{/* <BgVideo src={"/bgVideo.mp4"} /> */}
+				{/* <BgImage /> */}
+				<BgVideo src={"/bgVideo.mp4"} />
 			</body>
 		</html>
 	);
