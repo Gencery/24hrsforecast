@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Component1() {
 	return (
-		<div className="box p-0 sm:p-6 flex sm:flex-col flex-row w-full sm:w-fit justify-center items-center space-y-2 flex-wrap">
+		<div className="box p-0 xl:p-6 flex xl:flex-col flex-row w-full xl:w-fit justify-center items-center space-y-2 flex-wrap">
 			<div className="w-full space-y-2 flex flex-col justify-end items-center sm:w-[125px] h-[125px]">
 				<Image
 					src={"/assets/img/logo.png"}
